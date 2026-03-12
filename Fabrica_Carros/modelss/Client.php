@@ -1,1 +1,0 @@
-<!-- Consultas e regras de negocio -->

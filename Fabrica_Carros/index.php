@@ -1,8 +1,8 @@
 <?php 
 
-header("location: View/index.html");
-exit;
+    require_once('./controllers/clientsController.php');
 
+    $controller = new
 
 
 ?>
