@@ -12,7 +12,7 @@
         }
         function getAll(){
             $resultData = $this->model->getAll(); 
-            print_r($resultData);
+            require_once __DIR__ . '/../views/index.php';
         }
     }
 
