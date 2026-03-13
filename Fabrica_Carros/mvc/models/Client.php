@@ -8,5 +8,8 @@
             parent::__construct();
             $this->table = 'clients';
         }
+        function getAll(){
+            $resultData = $this->model->getAll();
+        }
     }
 ?>
