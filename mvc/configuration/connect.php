@@ -6,7 +6,7 @@
     define('USER', 'root');
     define('PASSWORD', ''); //Não tem senha
 
-    class connect{
+    class Connect{
         protected $connection;
 
         function __construct()
@@ -18,6 +18,7 @@
                 $this->connection = new PDO('mysql:host='.HOST.';dbname='.DATABASENAME, USER, PASSWORD);
             }catch(PDOException $e){
                 echo "Erro na conexão: " . $e->getMessage();
+                die();
             }
         }
     }
