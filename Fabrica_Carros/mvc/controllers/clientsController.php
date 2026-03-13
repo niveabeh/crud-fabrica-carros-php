@@ -11,6 +11,7 @@ require_once('./models/Client.php');
         }
         function getAll(){
             $resultData = $this->model->getAll();
+            print_r($resultData);
         }
     }
 

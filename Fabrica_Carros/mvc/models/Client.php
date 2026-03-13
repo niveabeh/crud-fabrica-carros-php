@@ -9,7 +9,9 @@
             $this->table = 'clients';
         }
         function getAll(){
-            $resultData = $this->model->getAll();
+           $sqlSelect = $this->connection->query("SELECT * FROM $this->table");
+           $resultQuery = $sqlSelect->fetchAll();
+           return $resultQuery;
         }
     }
 ?>
