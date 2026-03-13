@@ -1,14 +1,18 @@
 
 <?php 
 
-    require_once('./mvc/model/Client.php');
+    require_once __DIR__ .'/../model/Client.php';
 
-    class clientsController{
+    class ClientsController{
         private $model;
 
         function __construct()
         {
-            $this->model = new ClientModel; 
+            $this->model = new ClientModel(); 
+        }
+        function getAll(){
+            $resultData = $this->model->getAll(); 
+            print_r($resultData);
         }
     }
 
