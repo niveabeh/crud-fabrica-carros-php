@@ -7,7 +7,6 @@
     define('PASSWORD', ''); //Não tem senha
 
     class Connect{
-        
         protected $connection;
 
         function __construct()

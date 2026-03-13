@@ -8,17 +8,3 @@
     padding: 10px;
     text-align: center;
 }
-
-.table th {
-    background-color: #442c50;
-    color: white;
-}
-
-.table tr:nth-child(even) {
-    background-color: #f9e3ff;
-}
-
-.table tr:hover {
-    background-color: #ead6f8;
-    transition: .3s;
-}
