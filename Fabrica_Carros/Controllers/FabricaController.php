@@ -57,6 +57,10 @@ class FabricaController
         require_once __DIR__ . '/../Views/fabricar.php';
     }
 
+    //Rota para a mensagem de sucesso 
+    public function msucesso(){
+        require_once __DIR__ .'/../Views/msucesso.php';
+    }
     //Rota para meu Create
     public function fabricando()
     {
@@ -66,8 +70,7 @@ class FabricaController
         if ($modelo && $cor) {
             $this->model->fabricarVeiculos($modelo, $cor);
         }
-
-        header("Location: index.php?a=home");
+        header("Location: index.php?a=msucesso");
         exit;
     }
 

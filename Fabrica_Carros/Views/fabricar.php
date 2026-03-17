@@ -17,9 +17,9 @@
                 <!-- fotos -->
                 <div class="container mb-4">
                     <div class="row">
-                        <div class="col-2">
-                            <img src="/crud-fabrica-carros-php/Fabrica_Carros/Views/assets/img/nivea.jpg" class="img-fluid w-25 rounded-circle shadow border border-white " alt="Imagem perfil Nívea">
-                            <img src="/crud-fabrica-carros-php/Fabrica_Carros/Views/assets/img/emilly.png" class="img-fluid w-25 rounded-circle shadow border border-white " alt="Imagem perfil Nívea">
+                        <div class="col-2 d-flex gap-2">
+                            <img src="/crud-fabrica-carros-php/Fabrica_Carros/Views/assets/img/nivea.jpg" class="img-fluid w-75 rounded-circle shadow border border-white " alt="Imagem perfil Nívea">
+                            <img src="/crud-fabrica-carros-php/Fabrica_Carros/Views/assets/img/emilly.png" class="img-fluid w-75 rounded-circle shadow border border-white " alt="Imagem perfil Nívea">
                         </div>
                     </div>
                 </div>
@@ -27,8 +27,10 @@
                     <h2 class="h2 text-secondary">Home</h2>
                     <h1 class="text-roxo h1 fw-bold  ">Fábrica de Veículos</h1>
                 </div>
-                <div class="rounded-4 shadow bg-light p-2 mt-4 ">
+                <div class="rounded-4 shadow bg-light p-4 mt-4 ">
                     <h3 class="text-center text-secondary">Informe os dados dos veículos</h3>
+
+
                     <form action="index.php?a=fabricando" method="POST" class="p-3">
                         <div class="row g-3">
                             <div class="col-12">
