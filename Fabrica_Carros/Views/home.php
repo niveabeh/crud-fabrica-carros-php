@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="View/assets/css/style.css">
     <title>Menu-Fabrica de Veiculos</title>
 </head>
 
@@ -27,17 +27,11 @@
                 <h3>Menu Princial</h3>
                 <div class="container-menu">
 
-                    <form action="../Controller/processa.php" method="POST" id="formMenu" class="form-menu">
-
                         <div class="caixa-btn">
-
-                            <button type="submit" name="acao" value="fabricar" class="btn-primeiro">Fabricar
-                                Veiculo</button>
-                            <button type="submit" name="acao" value="venda" class="btn-primeiro">Vender Veiculo</button>
-                            <button type="submit" name="acao" value="info" class="btn-primeiro">Ver Informações</button>
+                            <a href="index.php?a=fabricar"  class="btn-primeiro">Fabricar Veículo</a>
+                            <a href="index.php?a=informacoes"  class="btn-primeiro">Informações</a>
                         </div>
 
-                    </form>
                 </div>
             </div>
             <p class="pequenas-palavras">Este programa faz parte da atividade final da disciplina de <span class="label-strong">Programação Orientada a Objetos em PHP</span>.

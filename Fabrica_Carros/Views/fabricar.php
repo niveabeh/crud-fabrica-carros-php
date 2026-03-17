@@ -1,3 +1,9 @@
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -13,48 +19,42 @@
 
 <body>
     <div class="container-pai">
-
         <div class="container-esquerdo">
 
+            <div class="fotos-integrantes">
+                <img src="../assets/img/emilly.png" class="fotos-inte">
+                <img src="../assets/img/nivea.jpg" class="fotos-inte">
+                <img src="../assets/img/ana.png" class="fotos-inte">
+            </div>
+
             <div class="titulos">
-                <h1 class="texto-h1">Fabricando <?= $tipo ?></h1>
+                <h2 class="subtitulo-principal">monte o seu veículo</h2>
+                <h1 class="texto-h1">Fábrica de Veículos</h1>
             </div>
 
             <div class="caixa-card">
-
                 <h3>Informe os dados dos veículos</h3>
 
-                <form action="../Controllers/FabricaController.php" method="POST">
+                <form action="index.php?a=fabricando" method="POST">
 
-                    <input type="hidden" name="acao" value="salvarVeiculo">
-                    <input type="hidden" name="qtdeFabricar" value="<?= $qtdeFabricar ?>">
-                    <input type="hidden" name="tipo_veiculo" value="<?= $tipo ?>">
-
-                    <?php for ($i = 1; $i <= $qtdeFabricar; $i++): ?>
-
-                        <div class="bloco-veiculo">
-
-                            <label>Modelo (<?= $i ?>)</label>
-                            <input type="text" name="modelo_<?= $i ?>" required>
-
-                            <label>Cor</label>
-                            <input type="text" name="cor_<?= $i ?>" required>
-
-                        </div>
-
-                    <?php endfor; ?>
-
-                    <div class="caixa-btn">
-
-                        <button class="btn-primeiro">Confirmar</button>
-                        <a href="../View/index.html" class="btn-segundo">Voltar</a>
-
+                    <div class="bloco-veiculo">
+                        <label>Modelo </label>
+                        <input type="text" name="modelo" id="modelo" required>
+                        <label>Cor</label>
+                        <input type="text" name="cor" id="cor" required>
                     </div>
 
+                    <div class="caixa-btn">
+                        <button class="btn-primeiro" type="submit">Confirmar</button>
+                        <a href="index.php?a=home" class="btn-segundo">Voltar</a>
+                    </div>
                 </form>
-
             </div>
+
         </div>
+
+        <div class="container-direito"></div>
+
     </div>
 </body>
 

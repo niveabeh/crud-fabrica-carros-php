@@ -1,26 +1,25 @@
-<?php 
+<?php
 
-abstract class Veiculo{
-    private $modelo;
-    private $cor;
+abstract class Veiculo
+{
+    protected $modelo;
+    protected $cor;
 
-    public function getModelo(){
+    public function getModelo()
+    {
         return $this->modelo;
     }
-    public function setModelo($modelo){
+    public function setModelo($modelo)
+    {
         $this->modelo = $modelo;
     }
 
-    public function getCor(){
+    public function getCor()
+    {
         return $this->cor;
     }
-    public function setCor($cor){
+    public function setCor($cor)
+    {
         $this->cor = $cor;
     }
-
-
 }
-
-
-
-?>

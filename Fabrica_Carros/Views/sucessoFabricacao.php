@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -17,17 +19,12 @@
         <div class="container-esquerdo">
 
             <div class="caixa-card">
-
                 <h3>Sucesso na Fabricação</h3>
-
                 <p class="sucesso">
                     Os veículos da categoria <strong><?= $tipo ?></strong> foram fabricados com sucesso.
                 </p>
-
                 <div class="caixa-btn">
-
                     <a href="../View/index.html" class="btn-segundo">Voltar ao menu</a>
-
                 </div>
 
             </div>
