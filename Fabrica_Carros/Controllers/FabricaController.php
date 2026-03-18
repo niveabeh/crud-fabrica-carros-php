@@ -77,7 +77,7 @@ class FabricaController
     //rotap para Delete 
     public function deletar()
     {
-        $id = $_POST['id'] ?? null;
+        $id = $_GET['id'] ?? null;
 
         if ($id) {
             $this->model->deletarVeiculo($id);

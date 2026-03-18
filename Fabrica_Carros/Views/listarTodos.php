@@ -30,34 +30,35 @@
                 <div class="rounded-4 shadow bg-light p-4 mt-4 ">
                     <h3 class="text-center text-secondary">Informe os dados dos veículos</h3>
 
-
-                    <table class="table table-striped ">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Modelo</th>
-                                <th>Cor</th>
-                                <th>Ações</th>
-                            </tr>
-                        </thead>
-                        <!-- Tem que fazer um select from e descobrir o tamanho da tabela -->
-                        <tbody>
-
-                            <?php
-                             foreach ($resultData as $i): ?>
-
+                    <div class="container-fluid" style="height: 250px; overflow-y: auto;">
+                        <table class="table table-striped ">
+                            <thead>
                                 <tr>
-                                    <td> <?php echo $i['id']  ?> </td>
-                                    <td><?php echo $i['modelo']  ?> </td>
-                                    <td><?php echo $i['cor']  ?> </td>
-                                    <td><a href="index.php?a=atualizar&id=<?= $i['id'] ?>"  class="btn btn-sm btn-primary">Editar</a>
-                                        <a href="index.php?a=deletar" class="btn btn-sm btn-outline-danger ">Excluir</a>
+                                    <th>ID</th>
+                                    <th>Modelo</th>
+                                    <th>Cor</th>
+                                    <th>Ações</th>
                                 </tr>
-                            <?php endforeach; ?>
-                        </tbody>
-                    </table>
+                            </thead>
+                            <!-- Tem que fazer um select from e descobrir o tamanho da tabela -->
+                            <tbody>
 
+                                <?php
+                                foreach ($resultData as $i): ?>
 
+                                    <tr>
+                                        <td> <?php echo $i['id']  ?> </td>
+                                        <td><?php echo $i['modelo']  ?> </td>
+                                        <td><?php echo $i['cor']  ?> </td>
+                                        <td><a href="index.php?a=atualizar&id=<?= $i['id'] ?>" class="btn btn-sm btn-primary">Editar</a>
+                                            <a href="index.php?a=deletar&id=<?= $i['id'] ?>" class="btn btn-sm btn-outline-danger ">Excluir</a>
+                                    </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <a href="index.php?a=home" class="btn btn-primeiro fw-semibold shadow w-100">Voltar</a>
                 </div>
                 <p class="text-secondary mt-4"><small> Este programa faz parte da atividade final da disciplina de <span class="text-roxo fw-semibold">Programação Orientada a Objetos em PHP</span>. O projeto apresenta uma simulação dinâmica de uma fábrica de veículos, permitindo criar, listar, editar e excluir veículos</small></p>
                 <div class="col-12 col-lg-6">

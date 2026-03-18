@@ -14,7 +14,6 @@ class FabricaModel extends Connect
         $sql = "DELETE FROM {$this->table} WHERE id = :id";
         $stmt = $this->connection->prepare($sql);
         $stmt->bindParam(':id', $id);
-
         return $stmt->execute();
     }
 
