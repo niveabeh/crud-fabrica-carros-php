@@ -50,7 +50,7 @@ INSERT INTO `veiculos` (`id`, `modelo`, `cor`) VALUES
 (10, 'Volkswagen Polo', 'Azul'),
 (11, 'Volkswagen T-Cross', 'Prata'),
 (12, 'Volkswagen Gol', 'Cinza'),
-(13, 'Chevrolet Onix', 'Verde'),
+(13, 'Chevrolet Onix', 'Verde'), 
 (14, 'Chevrolet Tracker', 'Preto'),
 (15, 'Chevrolet Montana', 'Branco'),
 (16, 'Hyundai HB20', 'Azul'),
