@@ -43,8 +43,8 @@
                             <!-- Tem que fazer um select from e descobrir o tamanho da tabela -->
                             <tbody>
 
-                                <?php
-                                foreach ($resultData as $i): ?>
+                                <?php  if (!empty($resultData)): ?>
+                                    <?php foreach ($resultData as $i): ?>
 
                                     <tr>
                                         <td> <?php echo $i['id']  ?> </td>
@@ -53,7 +53,8 @@
                                         <td><a href="index.php?a=atualizar&id=<?= $i['id'] ?>" class="btn btn-sm btn-primary">Editar</a>
                                             <a href="index.php?a=deletar&id=<?= $i['id'] ?>" class="btn btn-sm btn-outline-danger ">Excluir</a>
                                     </tr>
-                                <?php endforeach; ?>
+                                    <?php endforeach; ?>
+                                <?php  endif; ?>
                             </tbody>
                         </table>
                     </div>

@@ -18,12 +18,12 @@ class FabricaController
         require_once __DIR__ . '/../Views/home.php';
     }
 
-
+    
     //Rota para a minha página de listagem
     public function listarTodos()
     { 
         $resultData = $this->model->listar();
-        include_once __DIR__ . '/../Views/listarTodos.php';
+        require_once __DIR__ . '/../Views/listarTodos.php';
     }
     //Rota para meu Edite
     public function atualizar()

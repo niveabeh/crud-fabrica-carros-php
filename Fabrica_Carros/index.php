@@ -4,11 +4,11 @@
 
    $controller = new FabricaController();
 
-   $action = $_GET['a'] ?? 'home';
-  $rotasPermitidas = ['home','listarTodos','fabricar','salvar','editar','atualizar', 'atualizando','deletar', 'fabricando', 'msucesso'];
+   $acao = $_GET['a'] ?? 'home';
+   $rotasPermitidas = ['home','listarTodos','fabricar','atualizar', 'atualizando','deletar', 'fabricando', 'msucesso'];
 
-   if (in_array($action, $rotasPermitidas)) {
-      $controller->$action();
+   if (in_array($acao, $rotasPermitidas)) {
+      $controller->$acao();
    } else {
       $controller->home();
    }
