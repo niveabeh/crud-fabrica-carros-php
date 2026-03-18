@@ -45,7 +45,7 @@ class FabricaModel extends Connect
     //para editar algum veículo
     public function editarVeiculo($id, $modelo, $cor)
     {
-        $sql = "UPDATE {$this->table} 
+        $sql = "UPDATE $this->table
                 SET modelo = :modelo, cor = :cor 
                 WHERE id = :id";
 

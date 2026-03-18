@@ -1,3 +1,8 @@
+<?php
+
+ print_r($veiculo);
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -27,15 +32,39 @@
                     <h2 class="h2 text-secondary">Home</h2>
                     <h1 class="text-roxo h1 fw-bold  ">Fábrica de Veículos</h1>
                 </div>
-                <div class="rounded-4 shadow bg-light p-4 mt-4 " >
-                    <h3 class="text-center text-secondary">Menu Principal</h3>
-                    <div class="container-menu">
-                        <div class="container-fluid d-flex flex-column gap-2 justify-content-center" style="min-height:220px;">
-                            <a href="index.php?a=fabricar" class="btn btn-primeiro fw-semibold shadow ">Fabricar Veículo</a>
-                            <a href="index.php?a=listarTodos" class="btn btn-outline-primeiro fw-semibold shadow">Informações</a>
-                        </div>
+                <div class="rounded-4 shadow bg-light p-4 mt-4 ">
+                    <h3 class="text-center text-secondary">Atualize os Dados do Veículo</h3>
 
-                    </div>
+
+                    <form action="index.php?a=atualizando" method="POST" class="p-3">
+                        <div class="row g-3">
+                            <input type="hidden" name="id" value="<?php echo $veiculo['id'] ?>">
+                            
+                            <div class="col-12">
+                                <label for="modelo" class="form-label">Modelo</label>
+                                <input type="text" name="modelo" id="modelo" value="<?php echo $veiculo['modelo'] ?>"
+                                    class="form-control"
+                                    required>
+                            </div>
+                            <div class="col-12">
+                                <label for="cor" class="form-label">Cor</label>
+                                <input type="text" name="cor" id="cor"  value="<?php echo $veiculo['cor'] ?>"
+                                    class="form-control"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-2 mt-3 d-flex flex-column">
+                            <button type="submit" class="btn btn-primeiro">
+                                Confirmar
+                            </button>
+                            <a href="index.php?a=listarTodos" class="btn btn-outline-primeiro">
+                                Voltar
+                            </a>
+                        </div>
+                    </form>
+
+
+
                 </div>
                 <p class="text-secondary mt-4"><small> Este programa faz parte da atividade final da disciplina de <span class="text-roxo fw-semibold">Programação Orientada a Objetos em PHP</span>. O projeto apresenta uma simulação dinâmica de uma fábrica de veículos, permitindo criar, listar, editar e excluir veículos</small></p>
                 <div class="col-12 col-lg-6">

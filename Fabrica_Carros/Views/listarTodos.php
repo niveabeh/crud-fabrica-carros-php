@@ -27,15 +27,37 @@
                     <h2 class="h2 text-secondary">Home</h2>
                     <h1 class="text-roxo h1 fw-bold  ">Fábrica de Veículos</h1>
                 </div>
-                <div class="rounded-4 shadow bg-light p-4 mt-4 " >
-                    <h3 class="text-center text-secondary">Menu Principal</h3>
-                    <div class="container-menu">
-                        <div class="container-fluid d-flex flex-column gap-2 justify-content-center" style="min-height:220px;">
-                            <a href="index.php?a=fabricar" class="btn btn-primeiro fw-semibold shadow ">Fabricar Veículo</a>
-                            <a href="index.php?a=listarTodos" class="btn btn-outline-primeiro fw-semibold shadow">Informações</a>
-                        </div>
+                <div class="rounded-4 shadow bg-light p-4 mt-4 ">
+                    <h3 class="text-center text-secondary">Informe os dados dos veículos</h3>
 
-                    </div>
+
+                    <table class="table table-striped ">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Modelo</th>
+                                <th>Cor</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <!-- Tem que fazer um select from e descobrir o tamanho da tabela -->
+                        <tbody>
+
+                            <?php
+                             foreach ($resultData as $i): ?>
+
+                                <tr>
+                                    <td> <?php echo $i['id']  ?> </td>
+                                    <td><?php echo $i['modelo']  ?> </td>
+                                    <td><?php echo $i['cor']  ?> </td>
+                                    <td><a href="index.php?a=atualizar&id=<?= $i['id'] ?>"  class="btn btn-sm btn-primary">Editar</a>
+                                        <a href="index.php?a=deletar" class="btn btn-sm btn-outline-danger ">Excluir</a>
+                                </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
+
+
                 </div>
                 <p class="text-secondary mt-4"><small> Este programa faz parte da atividade final da disciplina de <span class="text-roxo fw-semibold">Programação Orientada a Objetos em PHP</span>. O projeto apresenta uma simulação dinâmica de uma fábrica de veículos, permitindo criar, listar, editar e excluir veículos</small></p>
                 <div class="col-12 col-lg-6">

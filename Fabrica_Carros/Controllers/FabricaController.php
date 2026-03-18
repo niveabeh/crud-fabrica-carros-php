@@ -21,24 +21,24 @@ class FabricaController
 
     //Rota para a minha página de listagem
     public function listarTodos()
-    {
+    { 
         $resultData = $this->model->listar();
-        require_once __DIR__ . '/../Views/info.php';
+        include_once __DIR__ . '/../Views/listarTodos.php';
     }
-
-
     //Rota para meu Edite
-    public function editar()
-    {
-        $id = $_GET['id'] ?? null;
+    public function atualizar()
+    {   
+       $id = $_GET['id'] ?? null;
 
         if ($id) {
             $veiculo = $this->model->buscarPorId($id);
-            require_once __DIR__ . '/../Views/editar.php';
+            include_once __DIR__ . '/../Views/atualizar.php';
+            return $veiculo;
         }
     }
-    public function atualizar()
-    {
+    public function atualizando()
+    {   
+    
         $id     = $_POST['id'] ?? null;
         $modelo = $_POST['modelo'] ?? null;
         $cor    = $_POST['cor'] ?? null;
