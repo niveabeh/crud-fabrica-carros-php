@@ -24,8 +24,8 @@
                     </div>
                 </div>
                 <div class="mb-2">
-                    <h2 class="h2 text-secondary">Home</h2>
-                    <h1 class="text-roxo h1 fw-bold  ">Fábrica de Veículos</h1>
+                    <h2 class="h2 text-secondary text-center text-md-start">Home</h2>
+                    <h1 class="text-roxo h1 fw-bold text-center text-md-start">Fábrica de Veículos</h1>
                 </div>
                 <div class="rounded-4 shadow bg-light p-4 mt-4 ">
                     <h3 class="text-center text-secondary">Veículos Cadastrados</h3>
