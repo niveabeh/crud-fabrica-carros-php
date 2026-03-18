@@ -28,7 +28,7 @@
                     <h1 class="text-roxo h1 fw-bold  ">Fábrica de Veículos</h1>
                 </div>
                 <div class="rounded-4 shadow bg-light p-4 mt-4 ">
-                    <h3 class="text-center text-secondary">Informe os dados dos veículos</h3>
+                    <h3 class="text-center text-secondary">Veículos Cadastrados</h3>
 
                     <div class="container-fluid" style="height: 250px; overflow-y: auto;">
                         <table class="table table-striped ">

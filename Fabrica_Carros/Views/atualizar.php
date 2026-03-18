@@ -1,8 +1,6 @@
 <?php
-
- print_r($veiculo);
+/** @var array $veiculo */
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
